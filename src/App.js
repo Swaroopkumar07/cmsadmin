@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React,{useState} from 'react';
+import { MainContext } from './ContextStore/MainContext';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import HomeScreen from '../src/Screens/HomeScreen/HomeScreen'
+import FeedBack from '../src/Screens/FeedBackScreen/FeedBackScreen'
+import StudentsTable from '../src/Components/StudentsTable/StudentsTable'
+import StudentDataScreen from './Screens/StudentDataScreen/StudentDataScreen';
+import MarksVisibleScreen from './Screens/MarksVisibleScreen/MarksVisibleScreen';
 function App() {
+  const [feedBackMsg, setFeedBackMsg] = useState('')
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <MainContext.Provider value={{
+    }} >
+      <Router>
+        <Routes>
+          <Route path="/" element={<HomeScreen />} />
+          <Route path="/StudentDataScreen" element={<StudentDataScreen/>}/>
+          <Route path="/MarksVisibleScreen" element={<MarksVisibleScreen/>}/>
+          <Route path="/FeedBack" element={<FeedBack/>}/>
+        </Routes>
+      </Router>
+    </MainContext.Provider>
+    {/* <StudentsTable/> */}
     </div>
   );
 }

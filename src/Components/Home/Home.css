@@ -1,0 +1,134 @@
+.Login_signup_component{
+  /* width: 40vw; */
+  /* box-shadow: 0px 5px 15px rgba(0,0,0,0.1); */
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  background-color: white;
+  margin: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  
+}
+.modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.Login_signup_heading{
+  color: #666;
+  font-weight: 500;
+  font-size: 22px;
+  border: 1px solid white;
+  padding-bottom: 20px;
+  margin-top: -50px;
+  margin-left: 5px;
+  margin-bottom: 20px;
+}
+
+.loginPDiv{
+  display: flex;
+  align-items: center;
+  justify-content: center;    
+}
+
+
+.continue_and_email{
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  margin-bottom: 15px;
+}
+.Continue_button{
+  background-color: #436850;
+  color: white;
+  font-weight: 500;
+  font-size: 17px;
+  padding: 12px 30px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+.continue_with_email{
+  font-size: 17px;
+  margin-left: 2vw;
+  display: flex;
+  align-items: center;
+  color: #436850;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+
+
+
+
+.continue_with_line{
+  display: flex;
+  align-items: center;
+  margin-top: -10px;
+}
+.left_line{
+  height: 1px;
+  width: 2.5vw;
+  background-color: #ccc;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+.Continue_with_text{
+  color: #999;
+  font-weight: 500;
+  font-size: 16px;
+}
+.right_line{
+  height: 1px;
+  width: 15vw;
+  background-color: #ccc;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+
+.warningTextStyle{
+  margin-left: 10px; color: rgb(216, 48, 48); font-weight: 500;margin-bottom: 0px; 
+  margin: 10px 10px;
+  
+}
+
+
+.password_section{
+  margin-top: 15px;
+  border: 2px solid #aaa;
+  border-radius: 30px;
+  padding: 15px;
+  padding-bottom:5px;
+  width: 27vw;
+  height: fit-content;
+  padding-left: 30px;
+  display: flex;
+  padding-top: 10px;
+  flex-direction: column;
+}
+.password_label{
+  color: #999;
+  font-size: 12px;
+}
+.password_input{
+  outline: none;
+  border: none;
+  padding-top: 5px;
+  padding-left: 0px;
+  color: #555;
+  font-size: 16px;
+}
+.Forgot_password{
+  margin-left: 10px; color: #9A9A9A; font-weight: 500;margin-bottom: 0px; cursor: pointer;
+  margin: 10px 10px;
+}
+.password_input::placeholder{
+  color:#55555576;
+  font-size:16px
+}
+
+
+
